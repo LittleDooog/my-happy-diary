@@ -42,3 +42,11 @@ document.getElementById("resetTimer").addEventListener("click", () => {
     seconds = 0;
     document.getElementById("timeDisplay").innerText = "00:00";
 });
+function toggleLesson(id) {
+    const content = document.getElementById(id);
+    if (content.style.display === 'none' || !content.style.display) {
+        content.style.display = 'block';
+    } else {
+        content.style.display = 'none';
+    }
+}
