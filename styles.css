@@ -4,11 +4,12 @@ body {
     margin: 0;
     padding: 0;
     color: #444;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 让内容从上到下排列 */
+    align-items: center; /* 水平居中 */
+    justify-content: flex-start; /* 从页面上方开始排列内容 */
+    height: auto; /* 让页面高度自适应 */
+    overflow: auto;
 }
 
 header {
@@ -27,6 +28,8 @@ main {
     background: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    width: 90%; /* 确保在小屏幕下宽度适配 */
+    text-align: center; /* 内容居中对齐 */
 }
 
 section {
@@ -72,6 +75,8 @@ footer {
 
 .lesson {
     margin-bottom: 15px;
+    max-width: 90%; /* 限制宽度让它适合竖屏 */
+    margin: 0 auto; /* 居中对齐 */
 }
 
 .lesson-title {
@@ -91,6 +96,10 @@ footer {
     background: #FFFFFF;
     border: 1px solid #ddd;
     border-radius: 5px;
+    max-width: 90%; /* 限制宽度，让它适合竖屏 */
+    margin: 0 auto; /* 水平居中 */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 textarea {
